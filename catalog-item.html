@@ -7,30 +7,32 @@
   <body>
     <header class="main-header">
       <div class="container"> <!-- класс-центровщик здесь и далее -->
-        <nav class="main-navigaion">
-          <div class="catalog-logo">
+        <div class="catalog-logo">
+          <a href="index.html" title="Барбершоп «Бородинский»">
             <img src="http://placehold.it/150x80" width="150" height="80" alt="Барбершоп «Бородинский»">
-          </div>
+          </a>
+        </div>
+        <nav class="main-navigaion">
           <ul>
             <li>
-              <a href="#">Информация</a>
+              <a href="#" title="Информация">Информация</a>
             </li>
             <li>
-              <a href="#">Новости</a>
+              <a href="#" title="Новости">Новости</a>
             </li>
             <li>
-              <a href="#">Прайс-лист</a>
+              <a href="#" title="Прайс-лист">Прайс-лист</a>
             </li>
             <li>
-              <a class="current-page-header">Магазин</a>
+              <a class="current-page-header" title="Магазин">Магазин</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a href="#" title="Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="user-block">
-          <a class="login" href="#">Вход</a>
+          <a class="login" href="#" title="Вход">Вход</a>
         </div>
       </div>
     </header>
@@ -40,42 +42,61 @@
         <nav class="breadcrumbs">
           <ul>
             <li>
-              <a href="#">Главная</a>
+              <a href="#" title="Главная">Главная</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="#" title="Магазин">Магазин</a>
             </li>
             <li>
-              <a href="#">Средства для ухода</a>
+              <a href="#" title="Средства для ухода">Средства для ухода</a>
             </li>
             <li>
-              <a class="current-page-main">Набор для путешествий &#171;Baxter of California&#187;</a>
+              <a class="current-page-main" title="Набор для путешествий &#171;Baxter of California&#187;">Набор для путешествий &#171;Baxter of California&#187;</a>
             </li>
           </ul>
         </nav>
       </div>
-      <section class="item-description">
+      <section class="item-gallery">
         <figure class="catalog-item-gallery">
-          <img src="http://placehold.it/400x400" width="400" height="400" alt="">
-          <img src="http://placehold.it/150x100" width="100" height="100" alt="">
-          <img src="http://placehold.it/150x100" width="100" height="100" alt="">
-          <img src="http://placehold.it/150x100" width="100" height="100" alt="">
+          <div class="item-gallery-active">
+            <img src="http://placehold.it/400x400" width="400" height="400" alt="">
+          </div>
+          <ul class="item-gallery-miniatures">
+            <li>
+              <img src="http://placehold.it/150x100" width="100" height="100" alt="">
+            </li>
+            <li>
+              <img src="http://placehold.it/150x100" width="100" height="100" alt="">
+            </li>
+            <li>
+              <img src="http://placehold.it/150x100" width="100" height="100" alt="">
+            </li>
+          </ul>
         </figure>
-        <div><span>Есть в наличии</span></div>
-        <div><span>Артикул: Dexter-AE</span></div>
+      </section>
+      <section class="catalog-item-description">
+        <div>
+          <span>Есть в наличии</span>
+          <span>Артикул: Dexter-AE</span>
+        </div>
         <p>
         Travel Kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
         </p>
-        <div class="price"><span>2 900 руб.</span></div>
-        <a href="#">Купить</a>
-        <h2>В набор входят:</h2>
-        <ul>
-          <li>Средство для умывания (50мл)</li>
-          <li>Увлажняющий крем (50мл)</li>
-          <li>Крем для бритья (50мл)</li>
-          <li>Крем после бритья, шампунь (50мл)</li>
-          <li>Удобная кожаная косметичка</li>
-        </ul>
+        <div class="catalog-item-price">
+          <span>2 900</span>
+          <span class="catalog-item-currency">руб.</span>
+          <button class="btn" type="button">Купить</button>
+        </div>
+        <div class="catalog-item-set-content">
+          <h2>В набор входят:</h2>
+          <ul>
+            <li>Средство для умывания (50мл)</li>
+            <li>Увлажняющий крем (50мл)</li>
+            <li>Крем для бритья (50мл)</li>
+            <li>Крем после бритья, шампунь (50мл)</li>
+            <li>Удобная кожаная косметичка</li>
+          </ul>
+      </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -84,19 +105,19 @@
           <p>
           Барбершоп &#171;Бородинский&#187;<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
+          <a href="#" title="Как нас найти?">Как нас найти?</a><br>
+          Телефон: <a href="tel:+78126660266" title="+7 (812) 666-02-66">+7 (812) 666-02-66</a>
           </p>
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#" title="Вконтакте">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#" title="Фейсбук">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#" title="Инстаграм">Инстаграм</a>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="btn" href="https://htmlacademy.ru" title="HTML Academy">HTML Academy</a>
         </section>
       </div>
     </footer>
