@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="20px" height="20px" viewBox="0 0 20 20">
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="95.24" height="100.00" id="filter0">
+<feFlood flood-color="rgb(249,245,243)" result="coFloodOut1"/>
+<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+</filter>
+<clipPath id="clip0"><circle cx="10.00" cy="10.00" r="10.00"/></clipPath><defs>
+<symbol id="symbol0"><circle cx="10.00" cy="10.00" r="10.00"/></symbol></defs>
+<g><circle cx="10.00" cy="10.00" r="10.00" fill="rgb(0,0,0)" filter="url(#filter0)"/><use xlink:href="#symbol0" x="0" y="0" width="20" height="20" fill="none" stroke="rgb(0,0,0)" stroke-width="4.00px" clip-path="url(#clip0)"/></g></svg>
