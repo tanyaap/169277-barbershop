@@ -1,5 +1,9 @@
 body {
-  font-family: "PTSans", "Arial", sans-serif;
+  min-width: 1200;
+  min-height: 1173;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
@@ -12,4 +16,162 @@ body {
 
 .secondary-heading {
   font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 2px solid #C2F2D0; /*здесь и далее для наглядности*/
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-bottom: 59px;
+  outline: 2px solid #97603A;
+}
+
+.main-navigation {
+  float: left;
+  width: 780px;
+  min-height: 72px;
+  outline: 2px solid #97603A;
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+  min-height: 72px;
+  outline: 2px solid #97603A;
+}
+
+.main-menu-header {
+  float: left;
+  width: 940px;
+  margin-bottom: 58px;
+  outline: 2px solid #97603A;
+}
+
+.filters {
+  float: left;
+  width: 168px;
+  margin-right: 72px;
+  outline: 2px solid #97603A;
+}
+
+.catalog-items {
+  font-size: 0;
+}
+
+.catalog-items article {
+  display: inline-block;
+  width: 220px;
+  height: 286px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  vertical-align: top;
+  outline: 2px solid #97603A;
+}
+
+.catalog-items article:nth-child(3n) {
+  margin-right: 0;
+}
+
+.page-numbers {
+  margin: 45px 0 0 240px;
+  font-size: 0;
+  outline: 2px solid #97603A;
+}
+
+.page-numbers li {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin-right: 7px;
+  font-size: 14px;
+  outline: 2px solid #97603A;
+}
+
+.item-gallery {
+  display: inline-block;
+  margin-right: 90px;
+  font-size: 0;
+  outline: 2px solid #97603A;
+}
+
+.item-gallery .item-gallery-active {
+  margin-bottom: 21px;
+  outline: 2px solid #97603A;
+}
+
+.item-gallery .item-gallery-miniatures li {
+  display: inline-block;
+  margin-right: 20px;
+  outline: 2px solid #97603A;
+}
+
+.item-gallery .item-gallery-miniatures li:nth-child(3) {
+  margin-right: 0;
+}
+
+.catalog-item-info {
+  display: inline-block;
+  width: 379px;
+  vertical-align: top;
+  outline: 2px solid #97603A;
+}
+
+.catalog-item-info .in-stock-block {
+  margin-bottom: 40px;
+  outline: 2px solid #97603A;
+}
+
+.catalog-item-info p {
+  margin-bottom: 41px;
+  outline: 2px solid #97603A;
+}
+
+.catalog-item-info .catalog-item-price {
+  margin-bottom: 67px;
+  outline: 2px solid #97603A;
+}
+
+.catalog-item-info .catalog-item-set-content h2 {
+  margin-bottom: 38px;
+  outline: 2px solid #97603A;
+}
+
+.main-footer {
+  margin-top: 49px;
+  padding-top: 60px;
+  padding-bottom: 41px;
+  outline: 2px solid #97603A;
+}
+
+.footer-contacts {
+  float: left;
+  width: 307px;
+  margin-right: 93px;
+}
+
+.footer-social {
+  float: left;
+  width: 141px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 140px;
 }
