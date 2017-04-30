@@ -5,8 +5,9 @@ body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 1.2;
   color: #000000;
+  background: #f0edea url(../img/main-background-crop.jpg);
 }
 
 .main-heading {
@@ -57,13 +58,7 @@ body {
   list-style: none;
 }
 
-.page-numbers ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer-social ul {
+.page-numbers {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -83,7 +78,6 @@ body {
 }
 
 .main-header {
-  margin-bottom: 59px;
   padding: 23px 0;
   color: #ffffff;
   background-color: #000000;
@@ -97,9 +91,19 @@ body {
   outline: 2px solid #97603A;
 }
 
+.main-header .catalog-logo a {
+  display: block;
+  line-height: 0;
+  outline: 2px solid #97603A;
+}
+
 .main-header .main-navigation {
   float: left;
   width: 564px;
+  outline: 2px solid #97603A;
+}
+
+.main-navigation .item-list {
   font-size: 0;
   outline: 2px solid #97603A;
 }
@@ -108,7 +112,6 @@ body {
   display: inline-block;
   margin-right: 40px;
   font-size: 16px;
-  line-height: 8px;
   vertical-align: middle;
   outline: 2px solid #97603A;
 }
@@ -122,14 +125,13 @@ body {
   width: 34px;
   padding: 0 10px 0 31px;
   font-size: 16px;
-  line-height: 8px;
   outline: 2px solid #97603A;
 }
 
 .main-menu-header .main-heading {
-  margin-bottom: 28px;
-  font-size: 30px
-  line-height: 18px;
+  padding: 59px 0 28px 0;
+  /*margin-bottom: 28px; не могу понять, почему лучше убрать этот маргин, с паддингами получается длиннее запись*/
+  font-size: 30px;
   outline: 2px solid #97603A;
 }
 
@@ -147,9 +149,13 @@ body {
   display: inline-block;
   margin-right: 40px;
   font-size: 14px;
-  line-heigt: 20px;
+  line-height: 20px;
   vertical-align: middle;
   outline: 2px solid #97603A;
+}
+
+.main-menu-header .breadcrumbs-item:last-child {
+  margin-right: 0;
 }
 
 .filters {
@@ -166,15 +172,20 @@ body {
   outline: 2px solid #97603A;
 }
 
+.catalog-items .catalog-list {
+  margin-bottom: 45px;
+  outline: 2px solid #97603A;
+}
+
 .catalog-items .item {
   display: inline-block;
   width: 220px;
-  min-height: 286px;
   margin-right: 20px;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
   vertical-align: top;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
   outline: 2px solid #97603A;
 }
 
@@ -182,8 +193,14 @@ body {
   margin-right: 0;
 }
 
+.catalog-items .item > a {
+  display: block;
+  line-height: 0;
+  outline: 2px solid #97603A;
+}
+
 .page-numbers {
-  margin-top: 45px;
+  margin-bottom: 49px;
   font-size: 0;
   outline: 2px solid #97603A;
 }
@@ -191,7 +208,6 @@ body {
 .page-numbers .page {
   display: inline-block;
   margin-right: 7px;
-  padding: 21px 22px;
   font-size: 14px;
   line-height: 18px;
   vertical-align: middle;
@@ -202,28 +218,40 @@ body {
   float: left;
   width: 460px;
   margin-right: 90px;
+  outline: 2px solid #97603A;
+}
+
+.item-gallery .item-gallery-list {
   font-size: 0;
   outline: 2px solid #97603A;
 }
 
-.item-gallery .item-gallery-active {
+.item-gallery-list .picture {
+  display: inline-block;
+  line-height: 0;
+  vertical-align: middle;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  outline: 2px solid #97603A;
+}
+
+.item-gallery .picture-active {
   margin-bottom: 21px;
   outline: 2px solid #97603A;
 }
 
 .item-gallery .miniature {
-  display: inline-block;
   margin-right: 20px;
+  margin-bottom: 49px;
   outline: 2px solid #97603A;
 }
 
-.item-gallery .miniature:nth-child(3) {
+.item-gallery .miniature:last-child {
   margin-right: 0;
 }
 
 .catalog-item-info {
   float: right;
-  width: 379px;
+  width: 380px;
   outline: 2px solid #97603A;
 }
 
@@ -247,8 +275,11 @@ body {
   outline: 2px solid #97603A;
 }
 
+main {
+  margin-bottom: 49px;
+}
+
 .main-footer {
-  margin-top: 49px;
   padding: 60px 0 41px 0;
   color: #ffffff;
   background-color: #000000;
@@ -269,7 +300,10 @@ body {
 }
 
 .main-footer .social-block {
+  margin: 0;
+  padding: 0;
   font-size: 0;
+  list-style: none;
 }
 
 .main-footer .social-item {
@@ -277,6 +311,7 @@ body {
   margin-right: 6px;
   font-size: 14px;
   line-height: 18px;
+  vertical-align: middle;
   outline: 2px solid #97603A;
 }
 
